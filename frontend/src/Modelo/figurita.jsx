@@ -5,3 +5,5 @@ export class Figurita{
         this.pais = pais;
         this.tengo = tengo;
     }}
+
+    {}
