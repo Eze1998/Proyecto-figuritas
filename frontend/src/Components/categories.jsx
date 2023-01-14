@@ -4,7 +4,7 @@ import Figurita from "./figurita";
 import { Figurita as ModeloFigurita } from "../Modelo/figurita";
 import { useEffect } from "react";
 import { useState } from "react";
-v
+
 const Componente = ({categorias}) => {
   return (
         <>
