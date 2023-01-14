@@ -6,4 +6,3 @@ export class Figurita{
         this.tengo = tengo;
     }}
 
-    {}
