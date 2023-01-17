@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Album from './Componentes/index'
+import Album from './Components/index'
 
 function App() {
   return (

@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { httpEditFigurita } from "../services/httpConsumer";
-import { getFiguritasById } from '../services/httpConsumer'
+import { httpEditFigurita, getFiguritasById  } from "../Servicios/httpConsumer";
 
 function addLeadingZeros(num, totalLength) {
   return String(num).padStart(totalLength, "0");

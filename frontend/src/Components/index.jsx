@@ -2,9 +2,9 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { getFiguritas, getPaises } from "../services/httpConsumer";
+import { getFiguritas, getPaises } from "../Servicios/httpConsumer";
 import { Categoria as ModeloCategoria } from "../Modelo/categoria";
-import {Componente} from "./categorias";
+import {Componente} from "./categories";
 
 const Album = ({ props }) => {
   const [categoria, SetCategoria] = useState([]);

@@ -14,7 +14,7 @@ const { QueryTypes } = require("sequelize");
 const { sequelize } = require("../Infraestructura/pool");
 const dbFigurita = db.Modelo;
 
-router.use(cors(corsOptions));
+router.use(cors());
 router.use(function (req, resp, next) {
   console.log("Time Entry:", Date.now());
   console.log("El metodo es: ", req.method);

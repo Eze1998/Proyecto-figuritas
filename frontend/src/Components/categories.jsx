@@ -1,6 +1,6 @@
 import React from "react";
-import { getFiguritasByPais } from "../services/httpConsumer";
-import Figurita from "./figurita";
+import { getFiguritasByPais } from "../Servicios/httpConsumer";
+import Figurita from "./figuritas";
 import { Figurita as ModeloFigurita } from "../Modelo/figurita";
 import { useEffect } from "react";
 import { useState } from "react";
