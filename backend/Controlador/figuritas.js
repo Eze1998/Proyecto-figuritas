@@ -72,7 +72,16 @@ router.put("/:id", async (req, res, next) => {
   res.send({message:"Correcto"});
   next();
 });
-
+router.post("/", async (req, res, next) => {
+  let body = req.body;
+  await dbFigurita.create({
+    nombre: body.nombre,
+    pais: body.pais,
+    tengo: 1,
+  });
+  res.send({message:"Correcto"});
+  next();
+})
 router.use(function (req, resp, next) {
   console.log("Time Exit:", Date.now());
   next();
