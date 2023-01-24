@@ -26,7 +26,11 @@ const Album = ({ props }) => {
         isLoading ?
         <p>Cargando</p>
         :(
-      <Componente categorias={categoria}/>
+        <>
+        <Link to="/agregar-figurita">agregar figurita</Link>
+        
+        <Componente categorias={categoria}/>
+        </>
       )}
     </>
   );

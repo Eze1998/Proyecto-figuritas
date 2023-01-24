@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Album from './Components/index'
+import Figurita from './Components/figurita'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <BrowserRouter>
         <Routes>
           <Route path='/' element={<Album/>}/>
+          <Route path='/agregar-figurita' element={<Figurita/>} />
         </Routes>
         </BrowserRouter>
   

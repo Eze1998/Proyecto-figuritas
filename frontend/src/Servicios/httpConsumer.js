@@ -30,3 +30,13 @@ export const getFiguritasByPais = (pais,onSuccess,onFinish) =>{
     .then(onSuccess)
     .finally(onFinish);
 }
+export const httpAgregarFigurita = (figurita) => 
+  
+  fetch(`${url}`,{
+            method: 'POST',
+            headers:{ 
+                'Accept': 'application/json',
+                'Content-Type':'application/json'
+              },
+            body: JSON.stringify(figurita),
+          })
