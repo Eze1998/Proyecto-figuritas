@@ -72,13 +72,13 @@ router.put("/:id", async (req, res, next) => {
   res.send({message:"Correcto"});
   next();
 });
-router.post("/", async (req, res, next) => {
+router.post("/figuritas", async (req, res, next) => {
   let body = req.body;
-  await dbFigurita.create({
-    nombre: body.nombre,
-    pais: body.pais,
-    tengo: 1,
-  });
+    await dbFigurita.create({
+      nombre: body.nombre,
+      pais: body.pais,
+      tengo: 1,
+    });
   res.send({message:"Correcto"});
   next();
 })
