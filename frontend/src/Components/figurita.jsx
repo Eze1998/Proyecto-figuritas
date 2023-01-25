@@ -7,6 +7,7 @@ const Figurita = ({ props }) => {
     const [nombre, setNombre] = useState("");
     const [figuritas, setFiguritas] = useState([]); 
     const [existeFigu, setExisteFigu] = useState(false);
+    const [figuCreada, setFiguCreada] = useState(false);
 
     const agregarFigurita = ((event) => {
         event.preventDefault()
@@ -17,14 +18,16 @@ const Figurita = ({ props }) => {
             }
         })
         if (!existe) {
-            await  (httpAgregarFigurita({
+            (httpAgregarFigurita({
                 nombre,
                 pais,
             }))
+            setFiguCreada(true)
         } else {
-            console.log('entra')
             setExisteFigu(true)
         }
+        setNombre("")
+        setPais("")
     });
 
     useEffect(() => {
@@ -39,6 +42,7 @@ const Figurita = ({ props }) => {
         <button type="submit">Agregar figurita</button>
        </form>
        {existeFigu ? <label>La figurita ya existe</label> : <></> }
+       {figuCreada ? <label>Figurita creada con exito</label> : <></> }
        </>
     );
   };
