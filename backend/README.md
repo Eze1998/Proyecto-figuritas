@@ -15,17 +15,12 @@ Realizar el siguiente comando en la raiz de "/server" y de "/front" para que se 
 
 3er paso:
 
-A traves de la ruta del server, debe ejecutarse el siguiente comando para correr el servidor falso (dependiendo del equipo con el que se realice este paso)
-  nodemon app.js
-
-4to paso:
-
 en backend/config/config.json, ingresar las credenciales correspondientes a la base de datos local.
 Configurar un archivo .env, con los datos de la base de datos.
 
-5to paso:
+4to paso:
 
-Ejecutar el siguiente comando para que se cree nuestra base de datos:
+Ejecutar el siguiente comando para que se cree la base de datos:
   sequelize-cli db:create
 Ejecutar el siguiente comando para que se realizen las migraciones y los modelos
   sequelize-cli db:migrate
