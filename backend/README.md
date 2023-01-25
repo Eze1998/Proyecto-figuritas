@@ -1,3 +1,4 @@
+Autor: Ezequiel Anszulowski
 Servidor corriendo en puerto localhost:3000
 A continuacion, las instrucciones para levantar el Backend:
 
